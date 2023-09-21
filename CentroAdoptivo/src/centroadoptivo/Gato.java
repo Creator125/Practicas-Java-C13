@@ -1,13 +1,14 @@
+
 package centroadoptivo;
 
-public class Perro {
+public class Gato {
     String nombre;
     int edad, peso, id;
 
-    public Perro() {
+    public Gato() {
     }
 
-    public Perro(String nombre, int edad, int peso, int id) {
+    public Gato(String nombre, int edad, int peso, int id) {
         this.nombre = nombre;
         this.edad = edad;
         this.peso = peso;
@@ -47,10 +48,9 @@ public class Perro {
     }
     
     public void mostrarInfo(){
-        System.out.println("Informacion del perro "+id);
+        System.out.println("Informacion del gato "+id);
         System.out.println("Nombre: "+nombre);
         System.out.println("Edad: "+edad);
         System.out.println("peso: "+peso);
     }
-    
 }
