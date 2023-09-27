@@ -1,12 +1,12 @@
 package calculararea;
 
-public class Circulo extends Figura {
+public class Cuadrado extends Figura{
 
-    public Circulo() {
+    public Cuadrado() {
     }
-    
-    public Circulo(double radio) {
-        super(radio, 0);
+
+    public Cuadrado(double longitud, double ancho) {
+        super(longitud, ancho);
     }
 
     public double getLongitud() {
@@ -24,9 +24,9 @@ public class Circulo extends Figura {
     public void setAncho(double ancho) {
         this.ancho = ancho;
     }
-
+    
     @Override
-    public double calcularArea() {
-        return Math.PI * Math.pow(longitud, 2);
+    public double calcularArea(){
+        return Math.pow(longitud, 2);
     }
 }
