@@ -19,37 +19,36 @@ public class Formulario {
         
         switch (opcion) {
             case 1:
-                manipularArchivos = new Crud();
-                manipularArchivos.guardarAdoptante();
+                formularioAdoptantes();
                 break;
             case 2:
-                manipularArchivos = new Crud();
-                manipularArchivos.leerAnimal();
-                break;
-            case 3:
+                //pendiente
+                break; 
+             case 3:
                 System.exit(0);
                 break;
             default:
                 throw new AssertionError();
-        }
+            }
     }
     
     public void formularioAdoptantes(){
-        opcion = Integer.parseInt(JOptionPane.showInputDialog("Bievenidos \n \n \n1.Modulo adoptantes "
-                                    + "\n1.Modulo Animal \n2.Adoptar \n3.Salir \n\n"));
+        opcion = Integer.parseInt(JOptionPane.showInputDialog("Adoptantes \n \n  "
+                + "\n1.Ingresar \n 2.Listar \n 3.Salir \n\n"));
         
-        switch (opcion) {
-            case 1:
-                
-                break;
-            case 2:
-                
-                break;
-            case 3:
-                
-                break;
-            default:
-                throw new AssertionError();
+        switch(opcion){
+             case 1:
+                manipularArchivos = new Crud();
+                manipularArchivos.guardarAdoptante();
+                 break;
+             case 2:
+
+                 break;
+             case 3:
+                 
+                 break;
+             default:
+                 throw new AssertionError();
         }
     }
 }

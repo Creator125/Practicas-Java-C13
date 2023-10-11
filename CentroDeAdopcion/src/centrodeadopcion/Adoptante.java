@@ -5,7 +5,8 @@ import java.io.Serializable;
 public class Adoptante implements Serializable{
     String nombre, apellido;
     int id;
-    private static final long serialVesionVid_1;
+    //Se declara version para serializar
+    private static final long serialVersionUid=1L;
 
     public Adoptante() {
     }
