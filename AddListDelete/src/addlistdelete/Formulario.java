@@ -17,6 +17,12 @@ public class Formulario {
             case 1:
                 asignarValor();
                 break;
+            case 2:
+                listarPerros();
+                break;
+            case 3:
+                eliminarPerro();
+                break;
             case 4:
                 System.exit(0);
                 break;
@@ -38,5 +44,16 @@ public class Formulario {
             asignarValor();
         }
         
+    }
+    
+    public void listarPerros(){
+        Crud lista = new Crud();
+        lista.listar("Perros.tex");
+    }
+    
+    public void eliminarPerro(){
+        int id = Integer.parseInt(JOptionPane.showInputDialog(null,"Id del perro"));
+        Crud eliminar = new Crud();
+        eliminar.deleteDog(id, "Perros.txt");
     }
 }
